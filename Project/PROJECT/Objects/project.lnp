@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\startup.o"
+".\objects\main.o"
+".\objects\pot_gpio_init.o"
+".\objects\pot_adc_init.o"
+".\objects\switch_init.o"
+".\objects\pot_adc.o"
+".\objects\delay100.o"
+".\objects\dist_edge_init.o"
+".\objects\dist_pulse_init.o"
+".\objects\distance.o"
+".\objects\motor_gpio_init.o"
+".\objects\motor_gptm_init.o"
+".\objects\motor_gptm_isr.o"
+".\objects\screen.o"
+".\objects\keypad.o"
+".\objects\keypad_init.o"
+".\objects\littledelay.o"
+".\objects\screen_init.o"
+".\objects\screen_func.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\project.map" -o .\Objects\project.axf
